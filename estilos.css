@@ -1,0 +1,33 @@
+/* Modificadores de Acessibilidade (Tamanho da Fonte) */
+.font-normal-size {
+    font-size: 16px;
+}
+
+.font-large-size {
+    font-size: 19px;
+}
+
+.font-xlarge-size {
+    font-size: 22px;
+}
+
+/* Tamanhos de títulos responsivos por tamanho de fonte selecionado */
+.font-normal-size h1 { font-size: 2.25rem; }
+.font-large-size h1 { font-size: 2.6rem; }
+.font-xlarge-size h1 { font-size: 3rem; }
+
+.font-normal-size h2 { font-size: 1.75rem; }
+.font-large-size h2 { font-size: 2.1rem; }
+.font-xlarge-size h2 { font-size: 2.4rem; }
+
+/* Rolagem suave ao clicar nos botões/links da página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Foco em alto contraste para navegação por teclado */
+a:focus, 
+button:focus {
+    outline: 4px solid #f59e0b !important;
+    outline-offset: 2px;
+}
