@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Segurança Digital para Idosos</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Nosso CSS customizado -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="bg-amber-50 text-slate-800 font-sans font-normal-size min-h-screen flex flex-col transition-all duration-200" id="body-root">
+
+    <!-- Barra de Acessibilidade no Topo -->
+    <div class="bg-slate-900 text-white px-4 py-3 shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-3">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-shield-halved text-amber-400 text-2xl"></i>
+                <span class="font-bold text-lg tracking-wide">Internet Segura & Fácil</span>
+            </div>
+            
+            <!-- Controles de Tamanho de Texto -->
+            <div class="flex items-center space-x-2 bg-slate-800 p-1.5 rounded-lg border border-slate-700">
+                <span class="text-sm font-medium mr-1 pl-1">Tamanho da letra:</span>
+                <button onclick="changeFontSize('normal')" class="px-3 py-1 bg-slate-700 hover:bg-amber-500 hover:text-slate-900 rounded font-bold text-sm transition" title="Tamanho de texto normal">A</button>
+                <button onclick="changeFontSize('large')" class="px-3 py-1 bg-slate-700 hover:bg-amber-500 hover:text-slate-900 rounded font-bold text-base transition" title="Tamanho de texto grande">A+</button>
+                <button onclick="changeFontSize('xlarge')" class="px-3 py-1 bg-slate-700 hover:bg-amber-500 hover:text-slate-900 rounded font-bold text-lg transition" title="Tamanho de texto muito grande">A++</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabeçalho Principal / Hero -->
+    <header class="bg-emerald-800 text-white py-10 px-4 shadow-inner">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h1 class="font-extrabold leading-tight">Navegue na Internet com Tranquilidade e Segurança</h1>
+            <p class="text-emerald-100 max-w-2xl mx-auto leading-relaxed">
+                Aprenda a identificar golpes, proteger seus dados e usar o celular e o computador sem medo. Dicas simples para o seu dia a dia!
+            </p>
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="#dicas" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition inline-flex items-center gap-2 text-lg">
+                    <i class="fa-solid fa-list-check"></i> Ver Dicas de Segurança
+                </a>
+                <a href="#quiz" class="bg-white hover:bg-emerald-50 text-emerald-900 font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition inline-flex items-center gap-2 text-lg">
+                    <i class="fa-solid fa-question-circle"></i> Testar Seus Conhecimentos
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-5xl mx-auto px-4 py-10 space-y-12 flex-grow">
+
+        <!-- Seção 1: Regras de Ouro -->
+        <section id="regras" class="bg-white p-6 sm:p-8 rounded-2xl shadow-md border-2 border-emerald-200">
+            <div class="flex items-center gap-3 mb-6 border-b pb-4 border-slate-200">
+                <div class="bg-emerald-100 p-3 rounded-full text-emerald-800">
+                    <i class="fa-solid fa-star text-3xl"></i>
+                </div>
+                <h2 class="font-bold text-emerald-900">3 Regras de Ouro da Segurança</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Regra 1 -->
+                <div class="bg-amber-50 p-5 rounded-xl border border-amber-200 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow">1</div>
+                    <h3 class="font-bold text-xl mb-2 text-slate-900">Desconfie Sempre</h3>
+                    <p class="text-slate-700 leading-relaxed">Se receber uma mensagem urgente pedindo dinheiro ou senhas, pare e pense antes de responder.</p>
+                </div>
+
+                <!-- Regra 2 -->
+                <div class="bg-amber-50 p-5 rounded-xl border border-amber-200 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow">2</div>
+                    <h3 class="font-bold text-xl mb-2 text-slate-900">Nunca Passe Senhas</h3>
+                    <p class="text-slate-700 leading-relaxed">Nenhum banco ou empresa confiável pede sua senha ou código do WhatsApp por telefone.</p>
+                </div>
+
+                <!-- Regra 3 -->
+                <div class="bg-amber-50 p-5 rounded-xl border border-amber-200 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow">3</div>
+                    <h3 class="font-bold text-xl mb-2 text-slate-900">Peça Ajuda</h3>
+                    <p class="text-slate-700 leading-relaxed">Em caso de dúvida, pergunte a um familiar ou amigo de confiança antes de clicar em qualquer link.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Golpes Mais Comuns -->
+        <section id="dicas" class="space-y-6">
+            <h2 class="font-bold text-slate-900 text-center mb-8">Golpes Mais Comuns e Como Se Proteger</h2>
+
+            <!-- Card WhatsApp -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border-l-8 border-green-500 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-green-100 text-green-700 p-4 rounded-2xl flex-shrink-0 mx-auto md:mx-0">
+                    <i class="fa-brands fa-whatsapp text-5xl"></i>
+                </div>
+                <div class="space-y-3 flex-grow">
+                    <h3 class="font-bold text-2xl text-slate-900">Golpe do Falso Parente no WhatsApp</h3>
+                    <p class="text-slate-700 leading-relaxed">
+                        Alguém manda mensagem dizendo ser seu filho, neto ou parente com um <strong>número novo</strong>, pedindo um Pix urgente porque o celular quebrou.
+                    </p>
+                    <div class="bg-green-50 p-4 rounded-xl border border-green-200">
+                        <strong class="text-green-900 block mb-1 font-bold">O que fazer?</strong>
+                        <p class="text-slate-700">Ligue para o número antigo do seu parente ou faça uma chamada de vídeo antes de enviar qualquer dinheiro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Ligações e Bancos -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border-l-8 border-blue-500 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-blue-100 text-blue-700 p-4 rounded-2xl flex-shrink-0 mx-auto md:mx-0">
+                    <i class="fa-solid fa-phone-slash text-5xl"></i>
+                </div>
+                <div class="space-y-3 flex-grow">
+                    <h3 class="font-bold text-2xl text-slate-900">Falsa Central do Banco</h3>
+                    <p class="text-slate-700 leading-relaxed">
+                        Uma pessoa liga dizendo que houve uma compra suspeita no seu cartão e pede para você digitar ou confirmar sua senha, ou instalar um aplicativo no celular.
+                    </p>
+                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-200">
+                        <strong class="text-blue-900 block mb-1 font-bold">O que fazer?</strong>
+                        <p class="text-slate-700">Desligue a ligação imediatamente. O banco nunca pede para você instalar nada nem solicita suas senhas de acesso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Sorteios e Links -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border-l-8 border-amber-500 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-amber-100 text-amber-800 p-4 rounded-2xl flex-shrink-0 mx-auto md:mx-0">
+                    <i class="fa-solid fa-gift text-5xl"></i>
+                </div>
+                <div class="space-y-3 flex-grow">
+                    <h3 class="font-bold text-2xl text-slate-900">Links Falsos e Prêmios Tentadores</h3>
+                    <p class="text-slate-700 leading-relaxed">
+                        Mensagens com links dizendo que você ganhou um presente, sorteio, ou pedindo para recadastrar seus dados do INSS ou do governo.
+                    </p>
+                    <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                        <strong class="text-amber-900 block mb-1 font-bold">O que fazer?</strong>
+                        <p class="text-slate-700">Não clique no link! Apague a mensagem. Promoções verdadeiras não pedem confirmações via links suspeitos por SMS ou WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Boas Práticas para Senhas -->
+        <section class="bg-emerald-900 text-white p-8 rounded-2xl shadow-lg space-y-6">
+            <h2 class="font-bold text-amber-300 text-center">Como Criar Senhas Seguras?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 pt-2">
+                <div class="bg-emerald-800 p-5 rounded-xl border border-emerald-700">
+                    <h3 class="font-bold text-xl text-red-300 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-xmark"></i> Evite Usar:
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 text-emerald-100">
+                        <li>Data do seu aniversário ou de filhos</li>
+                        <li>Sequências fáceis como "123456" ou "0000"</li>
+                        <li>Seu próprio nome ou sobrenome</li>
+                        <li>A mesma senha para tudo</li>
+                    </ul>
+                </div>
+
+                <div class="bg-emerald-800 p-5 rounded-xl border border-emerald-700">
+                    <h3 class="font-bold text-xl text-emerald-300 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check"></i> Prefira Usar:
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 text-emerald-100">
+                        <li>Uma frase simples que você se lembre</li>
+                        <li>Mistura de letras maiúsculas e números</li>
+                        <li>Anote num caderno em local seguro na sua casa (longe do celular)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Quiz Interativo -->
+        <section id="quiz" class="bg-white p-6 sm:p-8 rounded-2xl shadow-md border-2 border-amber-300 space-y-6">
+            <div class="text-center space-y-2">
+                <h2 class="font-bold text-slate-900">Teste Seus Conhecimentos</h2>
+                <p class="text-slate-600">Responda à pergunta abaixo para ver se você está preparado:</p>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl border border-amber-200 max-w-2xl mx-auto space-y-4">
+                <p class="font-bold text-lg text-slate-800">
+                    Cenário: Você recebe uma ligação informando que ganhou um prêmio do seu cartão de crédito, mas precisa informar sua senha agora. O que você faz?
+                </p>
+
+                <div class="space-y-3 pt-2" id="quiz-options">
+                    <button onclick="checkAnswer(false)" class="w-full text-left p-4 rounded-xl border-2 border-slate-300 bg-white hover:bg-slate-100 transition font-medium focus:ring-2 focus:ring-amber-500">
+                        A) Passo a senha rapidamente para não perder o prêmio.
+                    </button>
+                    <button onclick="checkAnswer(true)" class="w-full text-left p-4 rounded-xl border-2 border-slate-300 bg-white hover:bg-slate-100 transition font-medium focus:ring-2 focus:ring-amber-500">
+                        B) Desligo a ligação, pois o banco nunca pede senha por telefone.
+                    </button>
+                    <button onclick="checkAnswer(false)" class="w-full text-left p-4 rounded-xl border-2 border-slate-300 bg-white hover:bg-slate-100 transition font-medium focus:ring-2 focus:ring-amber-500">
+                        C) Digo apenas metade da minha senha.
+                    </button>
+                </div>
+
+                <!-- Mensagem de Resposta -->
+                <div id="quiz-result" class="hidden p-4 rounded-xl mt-4 font-bold text-center"></div>
+            </div>
+        </section>
+
+        <!-- Seção 5: Telefone de Emergência -->
+        <section class="bg-rose-50 border-2 border-rose-200 p-6 rounded-2xl text-center space-y-3">
+            <i class="fa-solid fa-triangle-exclamation text-rose-600 text-4xl"></i>
+            <h2 class="font-bold text-rose-900">Caiu em um golpe? O que fazer imediatamente:</h2>
+            <div class="max-w-2xl mx-auto text-slate-700 space-y-2 text-left sm:text-center">
+                <p><strong>1. Ligue para o seu banco:</strong> Avise que foi vítima de golpe para bloquearem seus cartões e conta.</p>
+                <p><strong>2. Registre um Boletim de Ocorrência (B.O.):</strong> Procure a Delegacia de Polícia mais próxima ou faça pela internet com ajuda de um parente.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-slate-900 text-white py-8 border-t-4 border-amber-400 mt-12">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-4">
+            <div class="flex justify-center items-center gap-2 text-amber-400 font-bold text-xl">
+                <i class="fa-solid fa-shield-heart"></i>
+                <span>Segurança Digital para Todos</span>
+            </div>
+            <p class="text-slate-400 text-sm max-w-md mx-auto">
+                Este site foi desenvolvido com foco em acessibilidade e facilidade de leitura para ajudar a terceira idade a navegar com segurança.
+            </p>
+            <div class="pt-2 border-t border-slate-800 text-slate-300 font-medium">
+                Feito por Thiago
+            </div>
+        </div>
+    </footer>
+
+    <!-- Arquivo de scripts JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
